@@ -18,23 +18,34 @@ Moreover, Espressif, the company behind ESP32, offers all sorts of hardware and 
 
 1) Download and Install ESP: You can download the ESP zip file using this link (https://docs.espressif.com/projects/esp-idf/en/v3.3.1/get-started/windows-setup.html). After downloading that,
       - Open a MSYS2 MINGW32 terminal window
-      - Create a directory named “esp” that is a default location to develop ESP32 applications. To do so, run the following shell command: mkdir -p ~/esp
+      - Create a directory named “esp” that is a default location to develop ESP32 applications. To do so, run the following shell command:
+        ```
+         mkdir -p ~/esp
+        ```
       - By typing cd ~/esp you can then move to the newly created directory. If there are no error messages you are done with this step.
     
 
 2) Install ESP-IDF v3.3.1: After installing ESP, you need to install ESP-IDF. For using this toolkit you need v3.3.1 of ESP-IDF. Documentation link :
 (https://docs.espressif.com/projects/esp-idf/en/v3.3.1/get-started/index.html). 
-      - To obtain a local copy: open terminal, navigate to the directory you want to put ESP-IDF, and clone the repository using git clone command
-        cd ~/esp git clone -b v3.3.1 --recursive https://github.com/espressif/esp-idf.git ESP-IDF will be downloaded into ~/esp/esp-idf.
+      - To obtain a local copy: open terminal, navigate to the directory you want to put ESP-IDF, and clone the repository using git clone command will be             downloaded into ~/esp/esp-idf.
+        ```
+        cd ~/esp git clone -b v3.3.1 --recursive https://github.com/espressif/esp-idf.git ESP-IDF
+        ```
       - Do not miss the --recursive option. If you have already cloned ESP-IDF without this option, run another command to get all the submodules:
+          ```
           cd esp-idf
           git submodule update --init --recursive
+          ```
       - Set up IDF_PATH variable on your PC: Setting may be done manually, each time the PC is restarted.
-        Install python packages required by ESP-IDF which are located in the $IDF_PATH/requirements.txt file. You can install them by running:
+        Install python packages required by ESP-IDF which are located in the $IDF_PATH/requirements.txt file. You can install them by running
+           ```
             python -m pip install --user -r $IDF_PATH/requirements.txt
+           ```
             Install ESP-IDF using : 
-            MSYS ~/esp/esp_idf
-            $ ./install.sh
+            ```
+              MSYS ~/esp/esp_idf
+              $ ./install.sh
+            ```
       - Set up the environment variables and tools required by using: 
             source $IDF_PATH/export.sh
 
