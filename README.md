@@ -37,22 +37,23 @@ Moreover, Espressif, the company behind ESP32, offers all sorts of hardware and 
           git submodule update --init --recursive
           ```
       - Set up IDF_PATH variable on your PC: Setting may be done manually, each time the PC is restarted.
-        Install python packages required by ESP-IDF which are located in the $IDF_PATH/requirements.txt file. You can install them by running
+        Install python packages required by ESP-IDF which are located in the $IDF_PATH/requirements.txt file. You can install requirenments and  ESP-IDF using :  them by running below commands
            ```
             python -m pip install --user -r $IDF_PATH/requirements.txt
-           ```
-            Install ESP-IDF using : 
-            ```
+      
               MSYS ~/esp/esp_idf
               $ ./install.sh
             ```
       - Set up the environment variables and tools required by using: 
-            source $IDF_PATH/export.sh
+            ```
+              source $IDF_PATH/export.sh
+        ```
 
 3) Download ESP32 CSI Toolkit: Now, we should download the toolkit from this link (https://stevenmhernandez.github.io/ESP32-CSI-Tool/). After downloading, run the below command. Then make sure to copy
+         ```
           cd ~/esp
           cp -r $IDF_PATH/examples/ESP32-CSI-Tool-master/active_ap .
-   
+         ```
           Ensure your project has the following structure. If not, copy the _components folder from esp\esp-idf\examples\ESP32-CSI-Tool-master and paste it into the esp\active_ap directory.
           active_ap/
           ├── CMakeLists.txt            # Root CMakeLists.txt
@@ -70,13 +71,16 @@ Moreover, Espressif, the company behind ESP32, offers all sorts of hardware and 
           Replace the  C:\esp\esp\msys32\home\ranis\esp\active_ap\main\main.cc file with https://github.com/nimashanishadi/ESP32_Set_Up/blob/main/main.cc
 
 
-4) Connect ESP32 Device: Here, you will only have to connect the ESP32 device with your computer and do some configurations (https://docs.espressif.com/projects/esp-idf/en/v3.3.1/get-started/index.html#configure)    .For this, you want a micro USB to USB cable. In every laptop, each USB port has its name. You can find the name after connecting it to your laptop by opening the Device Manager on your Windows and here you        find   the name of your USB port that is connected to your device. In my case, it was COM3.
+5) Connect ESP32 Device: Here, you will only have to connect the ESP32 device with your computer and do some configurations (https://docs.espressif.com/projects/esp-idf/en/v3.3.1/get-started/index.html#configure)    .For this, you want a micro USB to USB cable. In every laptop, each USB port has its name. You can find the name after connecting it to your laptop by opening the Device Manager on your Windows and here you        find   the name of your USB port that is connected to your device. In my case, it was COM3.
             - Then navigate to the active_ap and set the configurations as below
-                  cd ~/esp/active_ap
-                  idf.py menuconfig
+                  ```
+                     cd ~/esp/active_ap
+                     idf.py menuconfig
+                  ```
 
-
-5) Flash and Monitor: Finally, in the mingw32 command line, you only need to run the below commands in the active_ap project. After a few minutes you can see the access point is running but not receiving any data. because there is no device connected to it as a station. Now, if you didn't change the SSID and Password in the ESP32 configuration your access point name would be "myssid". You can find a network by this name on all of your devices (laptops, smartphones, etc). You only need to connect one of those devices to this network. The password of this network was set in step 4. By doing this, you can see the CSI data on your access point console. You will receive new data almost after each second.
-            idf.py fullclean 
-            idf.py -p COM3 flash 
-            idf.py -p COM3 monitor
+7) Flash and Monitor: Finally, in the mingw32 command line, you only need to run the below commands in the active_ap project. After a few minutes you can see the access point is running but not receiving any data. because there is no device connected to it as a station. Now, if you didn't change the SSID and Password in the ESP32 configuration your access point name would be "myssid". You can find a network by this name on all of your devices (laptops, smartphones, etc). You only need to connect one of those devices to this network. The password of this network was set in step 4. By doing this, you can see the CSI data on your access point console. You will receive new data almost after each second.
+            ```
+              idf.py fullclean 
+              idf.py -p COM3 flash 
+              idf.py -p COM3 monitor
+         ```
