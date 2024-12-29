@@ -24,9 +24,9 @@ Moreover, Espressif, the company behind ESP32, offers all sorts of hardware and 
 
 2) Install ESP-IDF v3.3.1: After installing ESP, you need to install ESP-IDF. For using this toolkit you need v3.3.1 of ESP-IDF. Documentation link :
 (https://docs.espressif.com/projects/esp-idf/en/v3.3.1/get-started/index.html). 
-      - To obtain a local copy: open terminal, navigate to the directory you want to put ESP-IDF, and clone the repository using git clone command:
+      - To obtain a local copy: open terminal, navigate to the directory you want to put ESP-IDF, and clone the repository using git clone command
         cd ~/esp git clone -b v3.3.1 --recursive https://github.com/espressif/esp-idf.git ESP-IDF will be downloaded into ~/esp/esp-idf.
-        Do not miss the --recursive option. If you have already cloned ESP-IDF without this option, run another command to get all the submodules:
+      - Do not miss the --recursive option. If you have already cloned ESP-IDF without this option, run another command to get all the submodules:
           cd esp-idf
           git submodule update --init --recursive
       - Set up IDF_PATH variable on your PC: Setting may be done manually, each time the PC is restarted.
@@ -66,6 +66,6 @@ Moreover, Espressif, the company behind ESP32, offers all sorts of hardware and 
 
 
 5) Flash and Monitor: Finally, in the mingw32 command line, you only need to run the below commands in the active_ap project. After a few minutes you can see the access point is running but not receiving any data. because there is no device connected to it as a station. Now, if you didn't change the SSID and Password in the ESP32 configuration your access point name would be "myssid". You can find a network by this name on all of your devices (laptops, smartphones, etc). You only need to connect one of those devices to this network. The password of this network was set in step 4. By doing this, you can see the CSI data on your access point console. You will receive new data almost after each second.
-            idf.py fullclean
-            idf.py -p COM3 flash
+            idf.py fullclean 
+            idf.py -p COM3 flash 
             idf.py -p COM3 monitor
