@@ -50,11 +50,11 @@ Moreover, Espressif, the company behind ESP32, offers all sorts of hardware and 
         ```
 
 3) Download ESP32 CSI Toolkit: Now, we should download the toolkit from this link (https://stevenmhernandez.github.io/ESP32-CSI-Tool/). After downloading, run the below command. Then make sure to copy
-
           cd ~/esp
           cp -r $IDF_PATH/examples/ESP32-CSI-Tool-master/active_ap .
-          Ensure your project has the following structure. If not, copy the _components folder from esp\esp-idf\examples\ESP32-CSI-Tool-master and paste it into the esp\active_ap directory.
-   ```
+Ensure your project has the following structure. If not, copy the _components folder from esp\esp-idf\examples\ESP32-CSI-Tool-master and paste it into the esp\active_ap directory.
+
+      ```
           active_ap/
           ├── CMakeLists.txt            # Root CMakeLists.txt
           ├── main/
@@ -67,9 +67,9 @@ Moreover, Espressif, the company behind ESP32, offers all sorts of hardware and 
           │   │   ├── CMakeLists.txt
           │   ├── sd_component/
    
-```
-      Replace the C:\esp\esp\msys32\home\User\esp\active_ap\CMakeLists.txt file with https://github.com/nimashanishadi/ESP32_Set_Up/blob/main/CMakeLists.txt
-          Replace the  C:\esp\esp\msys32\home\ranis\esp\active_ap\main\main.cc file with https://github.com/nimashanishadi/ESP32_Set_Up/blob/main/main.cc
+      ```
+Replace the C:\esp\esp\msys32\home\User\esp\active_ap\CMakeLists.txt file with https://github.com/nimashanishadi/ESP32_Set_Up/blob/main/CMakeLists.txt
+Replace the  C:\esp\esp\msys32\home\ranis\esp\active_ap\main\main.cc file with https://github.com/nimashanishadi/ESP32_Set_Up/blob/main/main.cc
 
 
 5) Connect ESP32 Device: Here, you will only have to connect the ESP32 device with your computer and do some configurations (https://docs.espressif.com/projects/esp-idf/en/v3.3.1/get-started/index.html#configure)    .For this, you want a micro USB to USB cable. In every laptop, each USB port has its name. You can find the name after connecting it to your laptop by opening the Device Manager on your Windows and here you        find   the name of your USB port that is connected to your device. In my case, it was COM3.
@@ -80,8 +80,8 @@ Moreover, Espressif, the company behind ESP32, offers all sorts of hardware and 
                   ```
 
 7) Flash and Monitor: Finally, in the mingw32 command line, you only need to run the below commands in the active_ap project. After a few minutes you can see the access point is running but not receiving any data. because there is no device connected to it as a station. Now, if you didn't change the SSID and Password in the ESP32 configuration your access point name would be "myssid". You can find a network by this name on all of your devices (laptops, smartphones, etc). You only need to connect one of those devices to this network. The password of this network was set in step 4. By doing this, you can see the CSI data on your access point console. You will receive new data almost after each second.
-            ```
-              idf.py fullclean 
-              idf.py -p COM3 flash 
-              idf.py -p COM3 monitor
-         ```
+               ```
+                    idf.py fullclean 
+                    idf.py -p COM3 flash 
+                    idf.py -p COM3 monitor
+               ```
