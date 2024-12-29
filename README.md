@@ -50,11 +50,11 @@ Moreover, Espressif, the company behind ESP32, offers all sorts of hardware and 
         ```
 
 3) Download ESP32 CSI Toolkit: Now, we should download the toolkit from this link (https://stevenmhernandez.github.io/ESP32-CSI-Tool/). After downloading, run the below command. Then make sure to copy
-         ```
+
           cd ~/esp
           cp -r $IDF_PATH/examples/ESP32-CSI-Tool-master/active_ap .
-         ```
           Ensure your project has the following structure. If not, copy the _components folder from esp\esp-idf\examples\ESP32-CSI-Tool-master and paste it into the esp\active_ap directory.
+   ```
           active_ap/
           ├── CMakeLists.txt            # Root CMakeLists.txt
           ├── main/
@@ -67,7 +67,8 @@ Moreover, Espressif, the company behind ESP32, offers all sorts of hardware and 
           │   │   ├── CMakeLists.txt
           │   ├── sd_component/
    
-          Replace the C:\esp\esp\msys32\home\User\esp\active_ap\CMakeLists.txt file with https://github.com/nimashanishadi/ESP32_Set_Up/blob/main/CMakeLists.txt
+```
+      Replace the C:\esp\esp\msys32\home\User\esp\active_ap\CMakeLists.txt file with https://github.com/nimashanishadi/ESP32_Set_Up/blob/main/CMakeLists.txt
           Replace the  C:\esp\esp\msys32\home\ranis\esp\active_ap\main\main.cc file with https://github.com/nimashanishadi/ESP32_Set_Up/blob/main/main.cc
 
 
