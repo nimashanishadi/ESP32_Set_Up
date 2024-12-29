@@ -54,22 +54,22 @@ Moreover, Espressif, the company behind ESP32, offers all sorts of hardware and 
           cp -r $IDF_PATH/examples/ESP32-CSI-Tool-master/active_ap .
 Ensure your project has the following structure. If not, copy the _components folder from esp\esp-idf\examples\ESP32-CSI-Tool-master and paste it into the esp\active_ap directory.
 
-      ```
-          active_ap/
-          ├── CMakeLists.txt            # Root CMakeLists.txt
-          ├── main/
-          │   ├── main.cc               # Main application source
-          │   ├── CMakeLists.txt        # Main directory CMakeLists.txt
-          ├── _components/
-          │   ├── nvs_component/
-          │   │   ├── nvs_component.h
-          │   │   ├── nvs_component.c
-          │   │   ├── CMakeLists.txt
-          │   ├── sd_component/
-   
-      ```
-Replace the C:\esp\esp\msys32\home\User\esp\active_ap\CMakeLists.txt file with https://github.com/nimashanishadi/ESP32_Set_Up/blob/main/CMakeLists.txt
-Replace the  C:\esp\esp\msys32\home\ranis\esp\active_ap\main\main.cc file with https://github.com/nimashanishadi/ESP32_Set_Up/blob/main/main.cc
+            ```
+                active_ap/
+                ├── CMakeLists.txt            # Root CMakeLists.txt
+                ├── main/
+                │   ├── main.cc               # Main application source
+                │   ├── CMakeLists.txt        # Main directory CMakeLists.txt
+                ├── _components/
+                │   ├── nvs_component/
+                │   │   ├── nvs_component.h
+                │   │   ├── nvs_component.c
+                │   │   ├── CMakeLists.txt
+                │   ├── sd_component/
+         
+             ```
+   - Replace the C:\esp\esp\msys32\home\User\esp\active_ap\CMakeLists.txt file with https://github.com/nimashanishadi/ESP32_Set_Up/blob/main/CMakeLists.txt
+   - Replace the  C:\esp\esp\msys32\home\ranis\esp\active_ap\main\main.cc file with https://github.com/nimashanishadi/ESP32_Set_Up/blob/main/main.cc
 
 
 5) Connect ESP32 Device: Here, you will only have to connect the ESP32 device with your computer and do some configurations (https://docs.espressif.com/projects/esp-idf/en/v3.3.1/get-started/index.html#configure)    .For this, you want a micro USB to USB cable. In every laptop, each USB port has its name. You can find the name after connecting it to your laptop by opening the Device Manager on your Windows and here you        find   the name of your USB port that is connected to your device. In my case, it was COM3.
