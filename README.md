@@ -15,3 +15,57 @@ Moreover, Espressif, the company behind ESP32, offers all sorts of hardware and 
 
 # Steps
 
+
+1) Download and Install ESP: You can download the ESP zip file using this link (https://docs.espressif.com/projects/esp-idf/en/v3.3.1/get-started/windows-setup.html). After downloading that,
+      - Open a MSYS2 MINGW32 terminal window
+      - Create a directory named “esp” that is a default location to develop ESP32 applications. To do so, run the following shell command: mkdir -p ~/esp
+      - By typing cd ~/esp you can then move to the newly created directory. If there are no error messages you are done with this step.
+    
+
+2) Install ESP-IDF v3.3.1: After installing ESP, you need to install ESP-IDF. For using this toolkit you need v3.3.1 of ESP-IDF. Documentation link :
+(https://docs.espressif.com/projects/esp-idf/en/v3.3.1/get-started/index.html). 
+      - To obtain a local copy: open terminal, navigate to the directory you want to put ESP-IDF, and clone the repository using git clone command:
+        cd ~/esp git clone -b v3.3.1 --recursive https://github.com/espressif/esp-idf.git ESP-IDF will be downloaded into ~/esp/esp-idf.
+        Do not miss the --recursive option. If you have already cloned ESP-IDF without this option, run another command to get all the submodules:
+          cd esp-idf
+          git submodule update --init --recursive
+      - Set up IDF_PATH variable on your PC: Setting may be done manually, each time the PC is restarted.
+        Install python packages required by ESP-IDF which are located in the $IDF_PATH/requirements.txt file. You can install them by running:
+            python -m pip install --user -r $IDF_PATH/requirements.txt
+            Install ESP-IDF using : 
+            MSYS ~/esp/esp_idf
+            $ ./install.sh
+      - Set up the environment variables and tools required by using: 
+            source $IDF_PATH/export.sh
+
+3) Download ESP32 CSI Toolkit: Now, we should download the toolkit from this link (https://stevenmhernandez.github.io/ESP32-CSI-Tool/). After downloading, run the below command. Then make sure to copy
+          cd ~/esp
+          cp -r $IDF_PATH/examples/ESP32-CSI-Tool-master/active_ap .
+   
+          Ensure your project has the following structure. If not, copy the _components folder from esp\esp-idf\examples\ESP32-CSI-Tool-master and paste it into the esp\active_ap directory.
+          active_ap/
+          ├── CMakeLists.txt            # Root CMakeLists.txt
+          ├── main/
+          │   ├── main.cc               # Main application source
+          │   ├── CMakeLists.txt        # Main directory CMakeLists.txt
+          ├── _components/
+          │   ├── nvs_component/
+          │   │   ├── nvs_component.h
+          │   │   ├── nvs_component.c
+          │   │   ├── CMakeLists.txt
+          │   ├── sd_component/
+   
+          Replace the C:\esp\esp\msys32\home\User\esp\active_ap\CMakeLists.txt file with https://github.com/nimashanishadi/ESP32_Set_Up/blob/main/CMakeLists.txt
+          Replace the  C:\esp\esp\msys32\home\ranis\esp\active_ap\main\main.cc file with https://github.com/nimashanishadi/ESP32_Set_Up/blob/main/main.cc
+
+
+4) Connect ESP32 Device: Here, you will only have to connect the ESP32 device with your computer and do some configurations (https://docs.espressif.com/projects/esp-idf/en/v3.3.1/get-started/index.html#configure)    .For this, you want a micro USB to USB cable. In every laptop, each USB port has its name. You can find the name after connecting it to your laptop by opening the Device Manager on your Windows and here you        find   the name of your USB port that is connected to your device. In my case, it was COM3.
+            - Then navigate to the active_ap and set the configurations as below
+                  cd ~/esp/active_ap
+                  idf.py menuconfig
+
+
+5) Flash and Monitor: Finally, in the mingw32 command line, you only need to run the below commands in the active_ap project. After a few minutes you can see the access point is running but not receiving any data. because there is no device connected to it as a station. Now, if you didn't change the SSID and Password in the ESP32 configuration your access point name would be "myssid". You can find a network by this name on all of your devices (laptops, smartphones, etc). You only need to connect one of those devices to this network. The password of this network was set in step 4. By doing this, you can see the CSI data on your access point console. You will receive new data almost after each second.
+            idf.py fullclean
+            idf.py -p COM3 flash
+            idf.py -p COM3 monitor
