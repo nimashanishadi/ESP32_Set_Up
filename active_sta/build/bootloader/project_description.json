@@ -1,0 +1,18 @@
+{
+    "project_name":       "bootloader",
+    "project_path":       "C:/esp/msys32/home/nimas/esp/esp-idf/components/bootloader/subproject",
+    "build_dir":          "C:/esp/msys32/home/nimas/esp/active_sta/build/bootloader",
+    "config_file":        "C:/esp/msys32/home/nimas/esp/active_sta/sdkconfig",
+    "config_defaults":    "",
+    "app_elf":            "bootloader.elf",
+    "app_bin":            "bootloader.bin",
+    "git_revision":       "v3.3.1",
+    "phy_data_partition": "",
+    "monitor_baud" : "921600",
+    "config_environment" : {
+        "COMPONENT_KCONFIGS" : " C:/esp/msys32/home/nimas/esp/esp-idf/components/efuse/Kconfig C:/esp/msys32/home/nimas/esp/esp-idf/components/esp32/Kconfig C:/esp/msys32/home/nimas/esp/esp-idf/components/log/Kconfig C:/esp/msys32/home/nimas/esp/esp-idf/components/spi_flash/Kconfig",
+        "COMPONENT_KCONFIGS_PROJBUILD" : " C:/esp/msys32/home/nimas/esp/esp-idf/components/bootloader/Kconfig.projbuild C:/esp/msys32/home/nimas/esp/esp-idf/components/esptool_py/Kconfig.projbuild C:/esp/msys32/home/nimas/esp/esp-idf/components/partition_table/Kconfig.projbuild"
+    },
+    "build_components" : [ "soc", "esp32", "log", "bootloader", "spi_flash", "micro-ecc", "efuse", "bootloader_support", "main", "esptool_py", "partition_table" ],
+    "build_component_paths" : [ "C:/esp/msys32/home/nimas/esp/esp-idf/components/soc", "C:/esp/msys32/home/nimas/esp/esp-idf/components/esp32", "C:/esp/msys32/home/nimas/esp/esp-idf/components/log", "C:/esp/msys32/home/nimas/esp/esp-idf/components/bootloader", "C:/esp/msys32/home/nimas/esp/esp-idf/components/spi_flash", "C:/esp/msys32/home/nimas/esp/esp-idf/components/micro-ecc", "C:/esp/msys32/home/nimas/esp/esp-idf/components/efuse", "C:/esp/msys32/home/nimas/esp/esp-idf/components/bootloader_support", "C:/esp/msys32/home/nimas/esp/esp-idf/components/bootloader/subproject/main", "C:/esp/msys32/home/nimas/esp/esp-idf/components/esptool_py", "C:/esp/msys32/home/nimas/esp/esp-idf/components/partition_table" ]
+}

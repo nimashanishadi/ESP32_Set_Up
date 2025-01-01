@@ -1,0 +1,1 @@
+cmd='C:/Users/nimas/.espressif/tools/cmake/3.13.4/bin/cmake.exe;-DSDKCONFIG=C:/esp/msys32/home/nimas/esp/active_sta/sdkconfig;-DIDF_PATH=C:/esp/msys32/home/nimas/esp/esp-idf;-DSECURE_BOOT_SIGNING_KEY=C:/esp/msys32/home/nimas/esp/active_sta;-DEXTRA_COMPONENT_DIRS=C:/esp/msys32/home/nimas/esp/esp-idf/components/bootloader;-GNinja;<SOURCE_DIR><SOURCE_SUBDIR>'

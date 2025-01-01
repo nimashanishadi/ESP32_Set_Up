@@ -1,0 +1,180 @@
+In archive C:/esp/msys32/home/nimas/esp/active_sta/build/esp-idf/main/libmain.a:
+
+main.cc.obj:     file format elf32-xtensa-le
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .group        00000014  00000000  00000000  00000034  2**2
+                  CONTENTS, READONLY, EXCLUDE, GROUP, LINK_ONCE_DISCARD
+  1 .literal._Z17is_wifi_connectedv 00000008  00000000  00000000  00000048  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+  2 .literal._ZL13event_handlerPvP14system_event_t 00000048  00000000  00000000  00000050  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+  3 .literal._Z41__static_initialization_and_destruction_0ii 00000018  00000000  00000000  00000098  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+  4 .literal._Z8nvs_initv 0000002c  00000000  00000000  000000b0  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+  5 .literal._Z18_sd_pick_next_filev 00000020  00000000  00000000  000000dc  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+  6 .literal._Z9outprintfPKcz 00000004  00000000  00000000  000000fc  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+  7 .literal._Z28match_set_timestamp_templatePc 00000008  00000000  00000000  00000100  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+  8 .literal._Z8time_setPc 00000018  00000000  00000000  00000108  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+  9 .literal._Z26get_system_clock_timestampv 00000020  00000000  00000000  00000120  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+ 10 .literal._Z26get_steady_clock_timestampv 00000020  00000000  00000000  00000140  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+ 11 .literal._Z21_print_csi_csv_headerv 00000008  00000000  00000000  00000160  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+ 12 .literal._Z8csi_initPc 00000038  00000000  00000000  00000168  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+ 13 .literal._Z13_handle_inputv 0000001c  00000000  00000000  000001a0  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+ 14 .literal._Z11input_checkv 0000001c  00000000  00000000  000001bc  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+ 15 .literal._Z10input_loopv 00000008  00000000  00000000  000001d8  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+ 16 .literal._Z27socket_transmitter_sta_loopPFbvE 000000a8  00000000  00000000  000001e0  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+ 17 .literal._Z33vTask_socket_transmitter_sta_loopPv 00000008  00000000  00000000  00000288  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+ 18 .literal._Z18_http_event_handleP21esp_http_client_event 00000028  00000000  00000000  00000290  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+ 19 .literal._Z12station_initv 000000cc  00000000  00000000  000002b8  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+ 20 .literal._Z12config_printv 0000009c  00000000  00000000  00000384  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+ 21 .literal.app_main 0000002c  00000000  00000000  00000420  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+ 22 .literal._ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructIPcEEvT_S7_St20forward_iterator_tag 00000010  00000000  00000000  0000044c  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+ 23 .literal._Z12_wifi_csi_cbPvP15wifi_csi_info_t 00000180  00000000  00000000  0000045c  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+ 24 .literal._GLOBAL__sub_I__Z8nvs_initv 00000008  00000000  00000000  000005dc  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+ 25 .literal._GLOBAL__sub_D__Z8nvs_initv 00000008  00000000  00000000  000005e4  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+ 26 .text         00000000  00000000  00000000  000005ec  2**0
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 27 .data         00000000  00000000  00000000  000005ec  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+ 28 .bss          00000000  00000000  00000000  000005ec  2**0
+                  ALLOC
+ 29 .text._Z17is_wifi_connectedv 00000015  00000000  00000000  000005ec  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+ 30 .rodata.str1.4 0000083f  00000000  00000000  00000604  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+ 31 .text._ZL13event_handlerPvP14system_event_t 000000b8  00000000  00000000  00000e44  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+ 32 .text._Z41__static_initialization_and_destruction_0ii 00000036  00000000  00000000  00000efc  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+ 33 .text._Z8nvs_initv 00000058  00000000  00000000  00000f34  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+ 34 .text._Z18_sd_pick_next_filev 00000041  00000000  00000000  00000f8c  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+ 35 .text._Z7sd_initv 00000005  00000000  00000000  00000fd0  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 36 .text._Z9outprintfPKcz 00000026  00000000  00000000  00000fd8  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+ 37 .text._Z8sd_flushv 00000005  00000000  00000000  00001000  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 38 .text._Z28match_set_timestamp_templatePc 0000001f  00000000  00000000  00001008  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+ 39 .text._Z8time_setPc 00000047  00000000  00000000  00001028  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+ 40 .text._Z26get_system_clock_timestampv 0000002d  00000000  00000000  00001070  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+ 41 .text._Z26get_steady_clock_timestampv 0000002d  00000000  00000000  000010a0  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+ 42 .text._Z21_print_csi_csv_headerv 0000000e  00000000  00000000  000010d0  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+ 43 .text._Z8csi_initPc 0000007d  00000000  00000000  000010e0  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+ 44 .text._Z13_handle_inputv 00000034  00000000  00000000  00001160  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+ 45 .text._Z11input_checkv 00000064  00000000  00000000  00001194  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+ 46 .text._Z10input_loopv 00000014  00000000  00000000  000011f8  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+ 47 .text._Z27socket_transmitter_sta_loopPFbvE 0000015d  00000000  00000000  0000120c  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+ 48 .text._Z33vTask_socket_transmitter_sta_loopPv 0000000c  00000000  00000000  0000136c  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+ 49 .text._Z18_http_event_handleP21esp_http_client_event 00000069  00000000  00000000  00001378  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+ 50 .text._Z12station_initv 000001d4  00000000  00000000  000013e4  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+ 51 .text._Z12config_printv 000000d6  00000000  00000000  000015b8  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+ 52 .text.app_main 0000003c  00000000  00000000  00001690  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+ 53 .text._ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructIPcEEvT_S7_St20forward_iterator_tag 00000063  00000000  00000000  000016cc  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+ 54 .text._Z12_wifi_csi_cbPvP15wifi_csi_info_t 0000059f  00000000  00000000  00001730  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+ 55 .text._GLOBAL__sub_I__Z8nvs_initv 00000010  00000000  00000000  00001cd0  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+ 56 .ctors        00000004  00000000  00000000  00001ce0  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, DATA
+ 57 .text._GLOBAL__sub_D__Z8nvs_initv 00000010  00000000  00000000  00001ce4  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+ 58 .dtors        00000004  00000000  00000000  00001cf4  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, DATA
+ 59 .rodata._ZZ12station_initvE19__PRETTY_FUNCTION__ 00000014  00000000  00000000  00001cf8  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+ 60 .rodata._ZZ8csi_initPcE19__PRETTY_FUNCTION__ 00000015  00000000  00000000  00001d0c  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+ 61 .rodata._ZZ8nvs_initvE19__PRETTY_FUNCTION__ 00000010  00000000  00000000  00001d24  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+ 62 .bss.xHandle  00000004  00000000  00000000  00001d34  2**2
+                  ALLOC
+ 63 .bss._ZL18s_wifi_event_group 00000004  00000000  00000000  00001d34  2**2
+                  ALLOC
+ 64 .data.data    00000004  00000000  00000000  00001d34  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, DATA
+ 65 .bss.input_buffer_pointer 00000004  00000000  00000000  00001d38  2**2
+                  ALLOC
+ 66 .bss.input_buffer 00000100  00000000  00000000  00001d38  2**2
+                  ALLOC
+ 67 .bss.mutex    00000004  00000000  00000000  00001d38  2**2
+                  ALLOC
+ 68 .bss.project_type 00000004  00000000  00000000  00001d38  2**2
+                  ALLOC
+ 69 .bss._ZStL8__ioinit 00000001  00000000  00000000  00001d38  2**2
+                  ALLOC
+ 70 .bss.real_time_set 00000001  00000000  00000000  00001d38  2**0
+                  ALLOC
+ 71 .bss.filename 00000018  00000000  00000000  00001d38  2**2
+                  ALLOC
+ 72 .bss.f        00000004  00000000  00000000  00001d38  2**2
+                  ALLOC
+ 73 .debug_frame  00000298  00000000  00000000  00001d38  2**2
+                  CONTENTS, RELOC, READONLY, DEBUGGING
+ 74 .debug_info   0000c34f  00000000  00000000  00001fd0  2**0
+                  CONTENTS, RELOC, READONLY, DEBUGGING
+ 75 .debug_abbrev 00000bc3  00000000  00000000  0000e31f  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 76 .debug_loc    000016a8  00000000  00000000  0000eee2  2**0
+                  CONTENTS, RELOC, READONLY, DEBUGGING
+ 77 .debug_aranges 000000f0  00000000  00000000  0001058a  2**0
+                  CONTENTS, RELOC, READONLY, DEBUGGING
+ 78 .debug_ranges 000000f8  00000000  00000000  0001067a  2**0
+                  CONTENTS, RELOC, READONLY, DEBUGGING
+ 79 .debug_line   000017ff  00000000  00000000  00010772  2**0
+                  CONTENTS, RELOC, READONLY, DEBUGGING
+ 80 .debug_str    0000bd20  00000000  00000000  00011f71  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 81 .comment      0000003c  00000000  00000000  0001dc91  2**0
+                  CONTENTS, READONLY
+ 82 .xtensa.info  00000038  00000000  00000000  0001dccd  2**0
+                  CONTENTS, READONLY
+ 83 .xt.lit       000000c0  00000000  00000000  0001dd05  2**0
+                  CONTENTS, RELOC, READONLY
+ 84 .xt.lit._ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructIPcEEvT_S7_St20forward_iterator_tag 00000008  00000000  00000000  0001ddc5  2**0
+                  CONTENTS, RELOC, READONLY
+ 85 .xt.prop      00000798  00000000  00000000  0001ddcd  2**0
+                  CONTENTS, RELOC, READONLY
+ 86 .xt.prop._ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructIPcEEvT_S7_St20forward_iterator_tag 00000078  00000000  00000000  0001e565  2**0
+                  CONTENTS, RELOC, READONLY
